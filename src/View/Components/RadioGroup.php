@@ -8,6 +8,6 @@ class RadioGroup extends Component
 {
     public function render()
     {
-        return view('branding-ui::components.radio-group');
+        return view('ui::components.radio-group');
     }
 }

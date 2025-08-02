@@ -8,6 +8,6 @@ class Footer extends Component
 {
     public function render()
     {
-        return view('branding-ui::components.app-footer');
+        return view('ui::components.app-footer');
     }
 }

@@ -8,6 +8,6 @@ class EmailLayout extends Component
 {
     public function render()
     {
-        return view('branding-ui::layouts.email-layout');
+        return view('ui::layouts.email-layout');
     }
 }

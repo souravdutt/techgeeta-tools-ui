@@ -8,6 +8,6 @@ class AppLayout extends Component
 {
     public function render()
     {
-        return view('branding-ui::components.app-layout');
+        return view('ui::components.app-layout');
     }
 }
