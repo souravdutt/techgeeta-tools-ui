@@ -56,7 +56,7 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans antialiased transition-colors duration-200 overflow-x-hidden">
     <!-- Navigation -->
-    <x-navigation />
+    <x-ui::navigation />
 
     <!-- Main Content -->
     <main class="min-h-screen">
@@ -64,7 +64,7 @@
     </main>
 
     <!-- Footer -->
-    <x-app-footer />
+    <x-ui::app-footer />
 
     <!-- Additional Scripts -->
     @stack('scripts')
