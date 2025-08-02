@@ -2,7 +2,7 @@
     "name": "souravdutt/techgeeta-tools-ui",
     "description": "TechGeeta UI for Tools to help keep same branding in all tools.",
     "type": "library",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "require": {
         "php": "^8.2",
         "illuminate/support": "^12.0",
