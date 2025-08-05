@@ -10,12 +10,12 @@
                         <span class="text-white font-bold text-sm">TG</span>
                     </div> --}}
                     <img
-                        src="{{ asset('assets/images/logo/logo-transparent.png') }}"
+                        src="{{ asset('vendor/ui/assets/images/logo/logo-transparent.png') }}"
                         alt="{{ config('app.name') }} Logo"
                         class="h-14 rounded-lg transition-transform transform hover:scale-105 hidden sm:block"
                     >
                     <img
-                        src="{{ asset('assets/images/logo/logo-landscape-transparent.png') }}"
+                        src="{{ asset('vendor/ui/assets/images/logo/logo-landscape-transparent.png') }}"
                         alt="{{ config('app.name') }} Logo"
                         class="h-10 rounded-lg sm:hidden transition-transform transform hover:scale-105"
                     >

@@ -21,11 +21,13 @@ class BrandingUIServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/../resources/css/branding.css' => public_path('vendor/ui/branding.css'),
-        ], 'ui-assets');
+            __DIR__.'/../resources/css/ui.css' => base_path('resources/css/vendor/ui.css'),
+            __DIR__.'/../resources/js/ui.js' => base_path('resources/js/vendor/ui.js'),
+            __DIR__.'/../public/assets' => public_path('/vendor/ui/assets'),
+        ], 'ui');
 
         $this->publishes([
-            __DIR__.'/../public/assets' => public_path('vendor/ui/assets'),
+            __DIR__.'/../public/assets' => public_path('/vendor/ui/assets'),
         ], 'ui-assets');
     }
 

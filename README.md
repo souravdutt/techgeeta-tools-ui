@@ -9,9 +9,9 @@ Reusable UI components and branding assets for all TechGeeta internal tools and 
     composer require souravdutt/techgeeta-tools-ui:^1.0
     ```
 
-2. (Optional) Run the install command to publish assets:
+2. Run the vendor publish command to publish assets:
     ```bash
-    php artisan install:ui
+    php artisan vendor:publish --tag=ui
     ```
 
 3. Use Blade components like this:

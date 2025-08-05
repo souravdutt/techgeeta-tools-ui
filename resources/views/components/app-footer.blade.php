@@ -7,7 +7,7 @@
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center space-x-1 mb-4">
                     <img
-                        src="{{ asset('assets/images/logo/logo-transparent.png') }}"
+                        src="{{ asset('vendor/ui/assets/images/logo/logo-transparent.png') }}"
                         alt="{{ config('app.name') }} Logo"
                         class="h-10 transition-transform transform hover:scale-105 hidden sm:block"
                     >
