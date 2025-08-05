@@ -55,7 +55,7 @@ class BrandingUIServiceProvider extends ServiceProvider
     protected function injectCssIntoApp()
     {
         $appCss = base_path('resources/css/app.css');
-        $injectLine = "@import 'vendor/ui.css';";
+        $injectLine = "@import './vendor/ui.css';";
 
         if (File::exists($appCss)) {
             $contents = File::get($appCss);
