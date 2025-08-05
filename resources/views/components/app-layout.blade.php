@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('vendor/branding-ui/assets/images/logo/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('vendor/ui/assets/images/logo/favicon.ico') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
