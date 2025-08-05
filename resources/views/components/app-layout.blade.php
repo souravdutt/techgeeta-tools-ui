@@ -25,7 +25,7 @@
         <meta property="og:url" content="{{ url()->current() }}">
     @endif
     <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/ui.css', 'resources/js/ui.js'])
 
     <!-- Additional Head Content -->
     @stack('head')
