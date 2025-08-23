@@ -19,7 +19,20 @@ class BrandingUIServiceProvider extends ServiceProvider
             \TechGeeta\BrandingUI\View\Components\Navigation::class,
             \TechGeeta\BrandingUI\View\Components\Footer::class,
             \TechGeeta\BrandingUI\View\Components\RadioGroup::class,
-            // Add others as needed
+            
+            // New UI Components
+            \TechGeeta\BrandingUI\View\Components\Button::class,
+            \TechGeeta\BrandingUI\View\Components\Input::class,
+            \TechGeeta\BrandingUI\View\Components\Textarea::class,
+            \TechGeeta\BrandingUI\View\Components\Card::class,
+            \TechGeeta\BrandingUI\View\Components\Modal::class,
+            \TechGeeta\BrandingUI\View\Components\Tabs::class,
+            \TechGeeta\BrandingUI\View\Components\TabPanel::class,
+            \TechGeeta\BrandingUI\View\Components\Badge::class,
+            \TechGeeta\BrandingUI\View\Components\Alert::class,
+            \TechGeeta\BrandingUI\View\Components\Dropdown::class,
+            \TechGeeta\BrandingUI\View\Components\DropdownItem::class,
+            \TechGeeta\BrandingUI\View\Components\Toggle::class,
         ]);
 
         $this->publishes([
