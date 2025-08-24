@@ -388,7 +388,7 @@ php artisan vendor:publish --tag=ui --force
 ```
 
 ## 📁 Local Package Usage (Symlink Path Repository)
-Make sure your main app's composer.json includes:
+- Make sure your main app's composer.json includes:
 ```json
 "repositories": [
   {
@@ -400,3 +400,5 @@ Make sure your main app's composer.json includes:
   }
 ]
 ```
+- Run `composer require ../techgeeta-tools-ui:dev-main` in your main app.
+  - ^--- Use the correct relative path to your local package.
