@@ -1,4 +1,4 @@
-@props(['activeRouteUri' => request()->route()->uri()])
+@props(['domainHost' => request()->getHost()])
 
 <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,15 +28,15 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="/" class="nav-link flex gap-1 items-center {{ $activeRouteUri === '/' ? 'active' : '' }} text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                <a href="https://mvpcost.techgeeta.com" class="nav-link flex gap-1 items-center {{ $domainHost === 'mvpcost.techgeeta.com' ? 'active' : '' }} text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
                     <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 7 5-5 5 5"></path>
                     </svg>
-                    Budget Estimator
+                    Startup Budget Estimator
                 </a>
 
-                <a href="#" class="nav-link flex gap-1 items-center text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                <a href="https://nda.techgeeta.com" class="nav-link flex gap-1 items-center {{ $domainHost === 'nda.techgeeta.com' ? 'active' : '' }} text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <!-- Document outline -->
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z" />
@@ -44,7 +44,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 16c.5 1 1.5 1 2-.2s1.5-1.8 2-.5c.5.8 1.5.8 2-.5" />
                     </svg>
                     NDA Generator
-                    <x-ui::badge variant="soon">Soon</x-ui::badge>
                 </a>
             </div>
 
@@ -52,7 +51,7 @@
             <div class="hidden md:flex items-center space-x-4">
                 <!-- Theme Toggle -->
                 <x-ui::button 
-                    variant="ghost" 
+                    variant="secondary"
                     size="small"
                     id="theme-toggle"
                     title="Toggle theme"
@@ -86,15 +85,15 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors duration-200">
         <div class="px-4 py-3 space-y-3">
-            <a href="/" class="mobile-nav-link {{ $activeRouteUri === '/' ? 'active' : '' }} text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
-                <svg class="w-4 h-4 mr-3 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <a href="https://mvpcost.techgeeta.com" class="mobile-nav-link {{ $domainHost === 'mvpcost.techgeeta.com' ? 'active' : '' }} flex items-center text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 7 5-5 5 5"></path>
                 </svg>
-                Budget Estimator
+                Startup Budget Estimator
             </a>
 
-            <a href="#" class="mobile-nav-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+            <a href="https://nda.techgeeta.com" class="mobile-nav-link {{ $domainHost === 'nda.techgeeta.com' ? 'active' : '' }} flex items-center text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <!-- Document outline -->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z" />
@@ -102,25 +101,25 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 16c.5 1 1.5 1 2-.2s1.5-1.8 2-.5c.5.8 1.5.8 2-.5" />
                 </svg>
                 NDA Generator
-                <x-ui::badge variant="soon" class="ml-auto">Soon</x-ui::badge>
+                {{-- <x-ui::badge variant="soon" class="ml-auto">Soon</x-ui::badge> --}}
             </a>
 
-            <div class="pt-3 border-t border-gray-200 dark:border-gray-700">
+            <div class="flex flex-col space-y-3 pt-3 border-t border-gray-200 dark:border-gray-700">
                 <!-- Theme Toggle (Mobile) -->
-                <button id="theme-toggle-mobile" class="mobile-nav-link w-full text-left cursor-pointer text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                <button id="theme-toggle-mobile" class="mobile-nav-link flex items-center w-full text-left cursor-pointer text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
                     <!-- Sun Icon (shown in dark mode) -->
-                    <svg id="theme-icon-sun-mobile" class="w-4 h-4 mr-3 hidden dark:block text-yellow-500 dark:text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                    <svg id="theme-icon-sun-mobile" class="w-4 h-4 mr-2 hidden dark:block text-gray-200 dark:text-gray-50" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.591a.75.75 0 101.06 1.06l1.591-1.591zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.591-1.591a.75.75 0 10-1.06 1.06l1.591-1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.591a.75.75 0 001.06 1.06l1.591-1.591zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.591-1.591a.75.75 0 00-1.061 1.06l1.591 1.591z"/>
                     </svg>
                     <!-- Moon Icon (shown in light mode) -->
-                    <svg id="theme-icon-moon-mobile" class="w-4 h-4 mr-3 block dark:hidden text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <svg id="theme-icon-moon-mobile" class="w-4 h-4 mr-2 block dark:hidden text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"/>
                     </svg>
                     <span id="theme-text-mobile" class="text-gray-700 dark:text-gray-200">Switch to Light Mode</span>
                 </button>
 
-                <a href="https://techgeeta.com/contact" class="mobile-nav-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
-                    <svg class="w-4 h-4 mr-3 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="https://techgeeta.com/contact" class="mobile-nav-link flex items-center text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                    <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                     Contact Us

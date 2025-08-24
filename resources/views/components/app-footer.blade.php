@@ -34,12 +34,16 @@
             <div>
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">Tools</h4>
                 <ul class="space-y-3">
-                    <li><a href="/" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Budget Estimator</a></li>
                     <li>
-                        <span class="flex items-center text-gray-400 dark:text-gray-500">
-                            NDA Tool 
-                            <x-ui::badge variant="soon" size="small" class="ml-2">Soon</x-ui::badge>
-                        </span>
+                        <a href="https://mvpcost.techgeeta.com" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                            Startup Budget Estimator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://nda.techgeeta.com" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                            NDA Generator
+                            {{-- <x-ui::badge variant="soon" size="small" class="ml-2">Soon</x-ui::badge> --}}
+                        </a>
                     </li>
                 </ul>
             </div>
