@@ -45,6 +45,12 @@
                             {{-- <x-ui::badge variant="soon" size="small" class="ml-2">Soon</x-ui::badge> --}}
                         </a>
                     </li>
+                    <li>
+                        <a href="https://equity.techgeeta.com" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                            Equity Splitter
+                            {{-- <x-ui::badge variant="danger" size="small" class="ml-2">Beta</x-ui::badge> --}}
+                        </a>
+                    </li>
                 </ul>
             </div>
 

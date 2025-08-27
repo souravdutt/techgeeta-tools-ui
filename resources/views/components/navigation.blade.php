@@ -45,6 +45,16 @@
                     </svg>
                     NDA Generator
                 </a>
+
+                <a href="https://equity.techgeeta.com" class="nav-link flex gap-1 items-center {{ $domainHost === 'equity.techgeeta.com' ? 'active' : '' }} text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <!-- Pie chart -->
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                    </svg>
+                    Equity Splitter
+                    {{-- <x-ui::badge variant="danger" class="ml-1">Beta</x-ui::badge> --}}
+                </a>
             </div>
 
             <!-- CTA Button & Theme Switcher -->
@@ -102,6 +112,16 @@
                 </svg>
                 NDA Generator
                 {{-- <x-ui::badge variant="soon" class="ml-auto">Soon</x-ui::badge> --}}
+            </a>
+
+            <a href="https://equity.techgeeta.com" class="mobile-nav-link {{ $domainHost === 'equity.techgeeta.com' ? 'active' : '' }} flex items-center text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <!-- Pie chart -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                </svg>
+                Equity Splitter
+                {{-- <x-ui::badge variant="danger" class="ml-auto">Beta</x-ui::badge> --}}
             </a>
 
             <div class="flex flex-col space-y-3 pt-3 border-t border-gray-200 dark:border-gray-700">
